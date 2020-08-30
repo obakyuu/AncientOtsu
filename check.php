@@ -129,31 +129,9 @@ if (mb_strlen($subject) == 0) {
                href="form?name=<?= $name ?>&from=<?= $from ?>&subject=<?= $subject ?>&text=<?= $text ?>">戻る</a>
             <?php
             if (isset($err1) == false && isset($err2) == false && isset($err3) == false && isset($err4) == false) {
-                print '<a class="uk-button uk-button-primary" href="#modal-overflow" uk-toggle>送信</a>';
+                print '<button class="uk-button uk-button-primary" type="submit">送信</button>';
             }
             ?>
-        </div>
-
-        <!-- 送信前の確認 -->
-        <div id="modal-overflow" uk-modal>
-            <div class="uk-modal-dialog">
-
-                <button class="uk-modal-close-default" type="button" uk-close></button>
-
-                <div class="uk-modal-header">
-                    <h2 class="uk-modal-title">個人情報取扱いについて</h2>
-                </div>
-
-                <div class="uk-modal-body" uk-overflow-auto>
-                    <?php include 'privacy.html' ?>
-                </div>
-
-                <div class="uk-modal-footer uk-text-right">
-                    <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
-                    <button class="uk-button uk-button-primary" type="submit">送信</button>
-                </div>
-
-            </div>
         </div>
 
     </form>
