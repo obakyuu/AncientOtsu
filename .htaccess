@@ -1,0 +1,25 @@
+# www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.eriel\.net
+RewriteRule ^(.*) http://eriel.net/$1 [R=301,L]
+# SSL
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# index.php
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ https://eriel.net/$1 [R=301,L]
+# hide .php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+# error
+ErrorDocument 403 https://eriel.net
+ErrorDocument 404 https://eriel.net/404
+ErrorDocument 500 https://eriel.net
+# deny
+<Files ~ "\.(txt|html|env|json|lock)$">
+deny from all
+</Files>

@@ -1,0 +1,10 @@
+# フォルダ
+image
+vendor
+.idea
+
+# env
+.env
+
+# composer
+composer.lock
