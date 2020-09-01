@@ -63,8 +63,8 @@ include $_ENV['ROOT']."include/header.php";
 <!-- import -->
 <div class="uk-container uk-margin-large">
 <?php
-//BugReport
-include "bug-report.html";
+//お知らせ
+include "notice.html";
 //開発段階表記
 include "development.html";
 //Weather
