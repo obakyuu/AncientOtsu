@@ -65,6 +65,8 @@ include $_ENV['ROOT']."include/header.php";
 <?php
 //お知らせ
 include "notice.html";
+//リニューアル
+include "renewal.html";
 //開発段階表記
 include "development.html";
 //Weather
