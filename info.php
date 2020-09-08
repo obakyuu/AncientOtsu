@@ -22,15 +22,6 @@ include $_ENV['ROOT']."include/header.php";
         </thead>
         <tbody>
         <tr>
-            <td>20/08/30</td>
-            <td>送信前の個人情報取扱について</td>
-            <td>
-                <ul>
-                    <li>送信前に個人情報等の取扱についてを表記する仕様に変更。内容はプライバシーポリシーと同様。</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
             <td>20/08/24</td>
             <td>歴史の意義を記述</td>
             <td>
