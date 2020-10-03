@@ -33,18 +33,6 @@ include $_ENV['ROOT']."include/header.php";
             </div>
         </li>
         <li>
-            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-center">
-                <img src="image/top/02.jpg" uk-cover>
-            </div>
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-position-small"
-                 uk-slideshow-parallax="x: 500,-500">
-                <h3 class="uk-margin-remove">鋭利開発中</h3>
-                <p class="uk-margin-remove">
-                    完成まで時間がかかります。気長にお待ちください。
-                </p>
-            </div>
-        </li>
-        <li>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
                 <img src="image/top/03.jpg" uk-cover>
             </div>
